@@ -1,0 +1,242 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+/*  
+Header and Nav
+*/
+nav{
+    background-color: #86C4FF;
+    padding: 40px;  
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end; 
+    max-width: 1200px;
+    margin: 0px auto; 
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+/*  
+Box Model
+*/
+.box-model-container{
+    background-color: lightgreen;
+    border:10px solid green;
+    padding:40px;
+    margin:0px auto;
+    min-height: 500px;
+    max-width: 1180px;
+}
+
+.box-model-bgd{
+    background-color: #CEF1C9;
+    padding: 40px;
+}
+
+.box-model-container h1{
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.box-model-container p{
+    font-size: 30px;
+    margin: 0;
+}
+/*  
+Flexbox
+*/
+.flexbox-container{
+    background-color: #F1D3CB;
+    padding: 40px;
+}
+
+.flexbox-wrapper{ 
+    margin:0px auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.flexbox-title{
+    display: flex;
+    background-color: #FF9371;
+    border: 10px solid #7D260B;
+    height: 170px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.flexbox-title div{
+    display: flex;
+    background-color: #FFECE5;
+    border: 5px solid #DD4413;
+    height: 160px;
+    justify-content: center;
+    width: 70%;
+}
+
+.flexbox-title div h2{
+    font-size: 60px;
+}
+
+.flexbox-bottom{
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.flexbox-element{
+    background-color: #FF9371;
+    border: 10px solid #7D260B;
+    display: flex;
+    flex-basis: 50%;
+    height: 300px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flexbox-element div{
+    background-color: #FFECE5;
+    border: 5px solid #DD4413;
+}
+
+.flexbox-bottom .flexbox-right{
+    flex-direction: column;
+}
+
+.flexbox-bottom .flexbox-left div{
+    width: 100%;
+}
+
+.flexbox-bottom .flexbox-right div{
+    height: 100%;
+}
+
+/* 
+Positioning elements
+*/
+.positioning-section{
+    background-color: #C9D7F1;
+    padding: 40px;
+}
+
+.positioning-wrapper{
+    margin:0px auto;
+    min-height: 600px;
+    max-width: 1300px;
+    position: relative;
+}
+
+.circle{
+    background-color: #447FF4;
+    border: 7px solid blue;
+    border-radius: 50%;
+    height: 170px;
+    position: absolute;
+    width:170px;
+}
+
+.square{
+    background-color: #447FF4;
+    border: 7px solid blue;
+    height: 150px;
+    position: absolute;
+    width:150px;
+}
+
+.positioning-wrapper h2{
+    font-size: 60px;
+}
+
+/* Heading Usage*/
+.heading-section{
+    background-color: #F0CBEF;
+    color: #6D046A;
+    padding: 40px;
+}
+
+.heading-wrapper{
+    margin:0px auto;
+    max-width: 1300px;
+}
+
+.heading-section h1, .heading-section h3{
+    font-size: 50px;
+    margin: 0 0 24px 0;
+}
+
+.heading-section h2{
+    font-size: 30px;
+    margin: 0 0 24px 0;
+}
+
+.heading-section p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3A0F3A;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.heading-section h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 24px 0;
+}
+
+/* 
+Javascript 
+*/
+.simple-javascript-section{
+    background-color: #FAEFD3;
+    padding: 40px;
+}
+
+.simple-javascript-wrapper{
+    margin:0px auto;
+    max-width: 1300px;
+}
+.simple-javascript-section h2{
+    font-size: 50px;
+    color: #644804;
+}
+.counter-button{
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    gap: 60px;
+}
+
+.button-styles{
+    background-color: #CDC5B1;
+    border: 3px solid grey;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px;
+}
+/*
+Footer
+*/
+footer{
+    background-color: #FFC3C3;
+}
+.footer-wrapper{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    margin:0px auto;
+    max-width: 1300px;
+}

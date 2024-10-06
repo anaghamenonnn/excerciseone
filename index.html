@@ -1,12 +1,111 @@
-<index/html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise One</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#box-model">Box Model</a>
+                </li>
+                <li>
+                    <a href="#flexbox">Flexbox</a>
+                </li>
+                <li>
+                    <a href="#positioning-elements">Positioning Elements</a>
+                </li>
+                <li>
+                    <a href="#heading-usage">Heading Usage</a>
+                </li>
+                <li>
+                    <a href="#simple-javascript">Simple Javascript</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section id="box-model" class="box-model-bgd">
+            <div class="box-model-container">
+                <h1>CSS Box Model</h1>
+                <p>/* Padding is inside of the element in CSS */</p>
+                <p><strong>padding: 40px;</strong></p>
+                <p>/* Margin is outside of the element in CSS */</p>
+                <p><strong>margin: 40px; (outside)</strong></p>
+                <p>/* Border is added to the width and height of elements in CSS */</p>
+                <p><strong>border:10px solid green;</strong></p>
+            </div>     
+        </section>
+        <section id="flexbox" class="flexbox-container">
+            <div class="flexbox-wrapper">
+                <div class="flexbox-title">
+                    <div>
+                        <h2>Display: Flex</h2>
+                    </div>
+                </div>
+                <div class="flexbox-bottom">
+                    <div class="flexbox-element flexbox-left">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="flexbox-element flexbox-right">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="positioning-elements" class="positioning-section">
+            <section class="positioning-wrapper">
+                    <div class="circle" style="right: 30px; top: 5px"></div>
+                    <div class="circle" style="right: 100px; top: 260px"></div>
+                    <div class="square" style="right: 30px; top: 350px"></div>
+                    <div class="square" style="right: 45%; top: 200px"></div>
+                    <div class="circle" style="left: 30px; top: 350px"></div>
+                    <h2>Positioning<br>Elements</h2>
+            </section>
+        </section>
+        <section id="heading-usage" class="heading-section">
+            <section class="heading-wrapper">
+                <h1>Heading Usage</h1>
+                <h2>A heading that describes the content below</h2>
+                <h3>Style not relevant</h3>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Luctus fusce molestie pulvinar orci vulputate ut sociosqu. Nibh varius ullamcorper non mi a ultricies tortor nisi. Varius vehicula suspendisse class et mauris ad lobortis tincidunt.</p>
+                <h4>Another Heading</h4>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Luctus fusce molestie pulvinar orci vulputate ut sociosqu.</p>
+            </section>
+        </section>
+        <section id="simple-javascript" class="simple-javascript-section">
+            <div class="simple-javascript-wrapper">
+                <script>
+                    let counterVal = 0;
+                    function increaseCounter() {
+                        counterVal++;
+                        const counterDiv = document.querySelector("#counter");
+                        counterDiv.innerHTML = counterVal;
+                    }
+                </script>
+                <h2>Simple Javascript</h2>
+                <div class="counter-button">
+                    <p id="counter">0</p>
+                    <button class="button-styles" onclick="increaseCounter()">Click to Increase</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <p>Anagha Menon - Fall 2024</p>
+        
+    </div>
+    </footer>
     
 </body>
 </html>
